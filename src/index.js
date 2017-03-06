@@ -3,13 +3,11 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
 
+import API_KEY from './api-key';
 import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
 
-const API_KEY = 'AIzaSyA_6o1kJvFXzlAq_azebtLBydi9Sxklh7I';
-
-// Create a new Component. This Component should produce some HTML.
 class App extends Component {
 
   constructor(props) {
@@ -47,5 +45,4 @@ class App extends Component {
   }
 }
 
-// Take this Component's generated HTML and put it on the page (in the DOM)
 ReactDOM.render(<App />, document.querySelector('.container'));
