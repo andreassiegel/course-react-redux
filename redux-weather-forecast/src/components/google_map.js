@@ -5,10 +5,10 @@ class GoogleMap extends Component {
   componentDidMount() {
 
     new google.maps.Map(this.refs.map, {
-      zoom: 12,
+      zoom: 12, // city size on the screen
       center: {
         lat: this.props.lat,
-        lng: this.props.lng
+        lng: this.props.lon
       }
     });
   }
