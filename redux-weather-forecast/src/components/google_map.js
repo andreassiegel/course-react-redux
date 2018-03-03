@@ -14,7 +14,7 @@ class GoogleMap extends Component {
   }
 
   render() {
-    // this.refs.map
+    // this.refs.map = reference to that element
     return <div ref="map" />;
   }
 }
